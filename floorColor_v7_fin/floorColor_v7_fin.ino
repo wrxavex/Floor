@@ -212,13 +212,6 @@ void downLed(int i, int now_, int R, int G, int B, int MAX) {
 
 
 
-void allOFF() {
-  for (int j = 0 ; j < 15 ; j++) {
-    pca[0].setPWM(j, 0, 0);     pca[1].setPWM(j, 0, 0);
-    pca[2].setPWM(j, 0, 0);     pca[3].setPWM(j, 0, 0);
-  }
-}
-
 
 void info(int maxNum_ , int minNum_ , int innerN_0 , int innerN_1, int nextNum) {
   Serial.print("next : "); Serial.print(next);
@@ -227,3 +220,12 @@ void info(int maxNum_ , int minNum_ , int innerN_0 , int innerN_1, int nextNum) 
   Serial.print(" , ");  Serial.print("innerN[1]= "); Serial.print(innerN_1);
   Serial.println("");
 }
+
+
+void init() {
+  for (int j = 0 ; j < 15 ; j++) {
+    pca[0].setPWM(j, 0, 0);     pca[1].setPWM(j, 0, 0);
+    pca[2].setPWM(j, 0, 0);     pca[3].setPWM(j, 0, 0);
+  }
+}
+
