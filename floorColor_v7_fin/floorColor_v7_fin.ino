@@ -88,7 +88,7 @@ void setup() {
 }
 
 void loop() {
-  //allOFF();
+  //init(); // change to init();
   //Serial.print("bigger[0] = "); Serial.println(bigSmall[0]);// max    //Serial.print("bigger[1] = "); Serial.println(bigSmall[1]);// min
 
   if (now == 3)     total = 11;  // 判斷 pca9685 到第4個板子 .. 只到 11
